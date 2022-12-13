@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #04f7d7, #2f9be3);
+  width: 100%;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 60px 35px 30px;
+  min-width: 350px;
+  border-radius: 10px;
+}
+
+.log #user {
+  font-size: 3rem;
+  color: rgb(80, 80, 80);
+  margin-bottom: 100px;
+}
+
+.log input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.log .row-inp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 270px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.log .row-inp-2 {
+  background-color: #17a1d8;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.log .row-inp-2 input {
+  width: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.log .row-inp-2:hover {
+  background-color: #0f7fa6;
+}
+
+.log .row-inp i {
+  font-size: 1.5rem;
+  color: rgb(80, 80, 80);
+}
+
+.back a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  background-color: #17a1d8;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+}
+
+.back a i {
+  margin-right: 10px;
+}
+
+.back {
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.back a:hover {
+  background-color: #0f7fa6;
+}

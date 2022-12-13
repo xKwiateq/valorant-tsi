@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 5%;
+  background-color: #531cb3;
+  color: white;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav .logo {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  padding: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+  color: rgb(213, 202, 244);
+}
+
+.nav i {
+  transform: translateY(1.4px);
+  margin-left: 20px;
+}
+
+.header {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0;
+  gap: 80px;
+}
+
+.header .h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 75px;
+  overflow: hidden;
+}
+
+.header .h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #531cb3;
+}
+
+.header .description {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  width: 150px;
+  padding: 10px 5px;
+  border: 2px solid #531cb3;
+  background-color: #531cb3;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn-1 {
+  color: #531cb3;
+  background-color: transparent;
+}
+
+.btn-1 a {
+  color: #531cb3;
+  background-color: transparent;
+}
+
+.btn:hover {
+  color: #531cb3;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover a {
+  color: #531cb3;
+  background-color: transparent;
+}
+
+.btn-1:hover {
+  background-color: #531cb3;
+  color: white;
+}
+
+.btn-1:hover a {
+  color: white;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.scroll a {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  background-color: #531cb3;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.about {
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto 0;
+  gap: 40px;
+}
+
+.about .h3about {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #531cb3;
+}
+
+.about .imageabout img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.downloadcontainer {
+  width: 100%;
+  margin: 80px 0 80px;
+}
+
+.download {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.download .h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #531cb3;
+}
+
+.footer {
+  background-color: #531cb3;
+
+  width: 100%;
+  padding: 40px 50px;
+}
+
+.footer .logorito {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.footer .logorito img {
+  width: 100%;
+  opacity: 85%;
+  transition: all 0.3s ease-in-out;
+}
+.footer .logorito img:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.footer .textfooter {
+  text-align: center;
+  color: white;
+  margin: 20px 0 35px;
+  line-height: 16px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+}
+
+.footer .links a {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .links p {
+  opacity: 80%;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.footer .links p:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.maps li {
+  width: 140px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: #531cb3;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.maps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.about-maps {
+  margin-bottom: 100px;
+}
+
+.about-maps img {
+  width: 75%;
+  border-radius: 10px;
+}
+
+/* agents */
+
+.agents {
+  width: 100%;
+  margin: 35px auto;
+  display: flex;
+  padding: 0 35px;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.agents .h2agents {
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 25px;
+}
+
+.agents img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.agents p {
+  background-color: #531cb3;
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btn-agents {
+  margin: 0 auto;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* weapons */
+.weapons-container {
+  width: 100%;
+  margin: 35px auto;
+  padding: 0 35px;
+}
+
+.weapons {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.weapons-container table {
+  border-collapse: collapse;
+}
+
+.weapons td,
+th {
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #531cb3;
+}
+
+.pricingimg {
+  margin-bottom: 50px;
+}
+
+.aboutpricing {
+  margin-top: 40px;
+}
+
+.aboutfaq {
+  margin-top: 55px;
+  margin-bottom: 60px;
+}
+
+.contents-p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.contents-p a {
+  color: #531cb3;
+  font-weight: 600;
+}
