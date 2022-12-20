@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">Valorant</div>
+        <div class="ul">
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./champions.html">Agents</a>
+            </li>
+            <li>
+              <a href="./login.html">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- formulas -->
+
+      <div class="forms">
+        <!-- imput name -->
+        <input type="text" placeholder="Imię" id="nameinp" />
+
+        <!-- input surname -->
+
+        <input type="text" placeholder="Nazwisko" id="subnameinp" />
+
+        <!-- input email -->
+
+        <input type="email" placeholder="Email" id="emailinp" />
+
+        <!-- input password -->
+
+        <input type="password" placeholder="Hasło" id="passinp" />
+
+        <!-- input number -->
+
+        <input type="number" placeholder="Wiek" id="ageinp" />
+
+        <!-- input date -->
+
+        <input type="date" placeholder="Data urodzenia" id="dateinp" />
+
+        <!-- input time -->
+
+        <input type="time" placeholder="Godzina" id="hourinp" />
+
+        <!-- input color -->
+
+        <input type="color" placeholder="Kolor" id="colorinp" />
+
+        <!-- input range -->
+
+        <input type="range" placeholder="Zakres" />
+
+        <!-- input submit -->
+
+        <input
+          type="submit"
+          placeholder="Wyślij"
+          id="submitinp"
+          onclick="infotext()"
+        />
+
+        <!-- input reset -->
+
+        <input
+          type="reset"
+          placeholder="Reset"
+          id="restinp"
+          onclick="reset()"
+        />
+
+        <div id="infoinps"></div>
+      </div>
+
+      <!-- footer -->
+
+      <div class="footer" id="footer">
+        <div class="footermargin">
+          <div class="logorito">
+            <img src="./img/riot.png.webp" alt="riotlogo" />
+          </div>
+          <div class="textfooter">
+            &COPY; 2022 Mike Kwiatkowsky <br />
+            All rights reserved
+          </div>
+          <div class="links">
+            <p>
+              <a href="./weapons.html">Weapons</a>
+            </p>
+            <p>
+              <a href="./pricing.html">Pricing</a>
+            </p>
+            <p>
+              <a href="./faq.html">FAQ</a>
+            </p>
+            <p>
+              <a href="./policy.html">Policy</a>
+            </p>
+            <p>
+              <a href="./contents.html">Contents</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- end -->
+    </div>
+
+    <!-- script -->
+    <script>
+      const nameinp = document.getElementById("nameinp");
+      const subnameinp = document.getElementById("subnameinp");
+      const emailinp = document.getElementById("emailinp");
+      const passinp = document.getElementById("passinp");
+      const ageinp = document.getElementById("ageinp");
+      const dateinp = document.getElementById("dateinp");
+      const hourinp = document.getElementById("hourinp");
+      const colorinp = document.getElementById("colorinp");
+      const submitinp = document.getElementById("submitinp");
+      const restinp = document.getElementById("restinp");
+
+      const info = document.getElementById("infoinps");
+
+      function infotext() {
+        info.innerHTML = `
+        <p>Imię: ${nameinp.value}</p>
+        <p>Nazwisko: ${subnameinp.value}</p>
+        <p>Email: ${emailinp.value}</p>
+        <p>Hasło: ${passinp.value}</p>
+        <p>Wiek: ${ageinp.value}</p>
+        <p>Data urodzenia: ${dateinp.value}</p>
+        <p>Godzina: ${hourinp.value}</p>
+        <p>Kolor: ${colorinp.value}</p>
+      `;
+      }
+
+      function reset() {
+        info.innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
